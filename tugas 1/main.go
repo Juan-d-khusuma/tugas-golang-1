@@ -13,11 +13,11 @@ func main() {
   _n, _ := strconv.Atoi(n)
   for i := 0; i< _n; i++ {
     var input string
-    fmt.Scan(&input)
-    splitted_input := strings.Fields(input)
-    t1, err := strconv.Atoi(splitted_input[0])
-    t2, err := strconv.Atoi(splitted_input[1])
-    t3, err:= strconv.Atoi(splitted_input[2])
+    var _t1, _t2, _t3 string
+    fmt.Scanln(&_t1, &_t2, &_t3)
+    t1, err := strconv.Atoi(_t1)
+    t2, err := strconv.Atoi(_t2)
+    t3, err:= strconv.Atoi(_t3)
     if err != nil {
       fmt.Println(err)
       return
